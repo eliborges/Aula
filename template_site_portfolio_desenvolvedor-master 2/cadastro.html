@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro</title>
+<!---->
+<Style>
+body{
+    
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 350px;
+    background: rgb(2, 2, 2);
+ 
+    box-shadow: 1px 2px 20px #000, 2px 6px 50px #000;
+    padding: 50px 20px;
+}
+
+h2{
+    text-align: center;
+    margin: 20px;
+    color: white;
+    font-size: 25px;
+}
+
+input{
+    width: 100%;
+    height: 46px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.input-field{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+label{
+    position: absolute;
+    top:0;
+    left: 0;
+    color: white;
+    transform: translateY(18px);
+    transition: .25s ease-in-out;
+}
+
+input:focus + label{
+    transform: translateY(-14px) scale(.8);
+    color:#f1eaea
+}
+
+input:focus{
+    box-shadow: 0 1px 0 0 #0a0a0a;
+    border-bottom: #0f0f0f 1px solid;
+}
+
+.center{
+    text-align: center;
+}
+
+button{
+    background: transparent;
+    padding: 15px 50px;
+    border-radius: 20px;
+    color: white;
+    text-transform: uppercase;
+    border:2px solid white;
+    margin: 20px;
+    cursor: pointer;
+    transition: ease-in-out .25s;
+}
+
+button:hover{
+    background: rgba(10, 10, 10, 0.459);
+}
+
+div a{
+    text-decoration: none;
+    color: white;
+    transition: .25s ease-in-out;
+}
+
+div a:hover{
+    color:#26a96a;
+}
+
+input:not(:placeholder-shown){
+    box-shadow: 0 1px 0 0 #0ca159;
+    border-bottom: #26a96a 1px solid;
+}
+
+input:not(:placeholder-shown) + label{
+    transform: translateY(-14px) scale(.8);
+}
+
+input::placeholder{
+    color:transparent;
+}
+
+</Style>
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro</h2>
+        <form action="index.html" method="post">
+            <div class="input-field">
+                <input type="text" id="nome" placeholder="alguma coisa">
+                <label for="nome">Nome:</label>
+            </div>
+
+            <div class="input-field">
+                <input type="email" id="senha" placeholder="alguma coisa">
+                <label for="E-mail">Email:</label>
+            </div>
+
+            <div class="input-field">
+                <input type="tel" id="tel" placeholder="alguma coisa">
+                <label for="tel">Telefone:</label>
+            </div>
+
+            <div class="center">
+                <button>Seguir</button>
+            </div>
+        </form>
+        <div class="links-uteis">
+         <!--<a href=""><p>Ainda não sou cadastrado</p></a>--> <center><a href=""><p>já sou dadastrado</p></a></center> 
+            
+        </div>
+    </div>
+</body>
+</html>
+
